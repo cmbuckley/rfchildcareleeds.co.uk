@@ -1,0 +1,21 @@
+title: Sweet Peas Childcare - OFSTED Registered Child Minders in Leeds
+description: Sweet Peas Childcare is an OFSTED registered child minders in the LS27 areas, with childcare experience since 2005.
+host: 0.0.0.0
+
+url: https://sweetpeasleeds.co.uk
+baseurl: ""
+
+markdown: kramdown
+highlighter: rouge
+paginate: 10
+
+exclude:
+  - CNAME
+  - Gemfile
+  - Gemfile.lock
+
+plugins:
+  - jekyll-redirect-from
+
+sass:
+  style: compressed
