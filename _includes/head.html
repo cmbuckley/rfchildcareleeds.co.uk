@@ -2,6 +2,7 @@
 {% if page.title %}{{ page.title | escape }} - {{ site.author | escape }}
 {% else %}{{ site.title | escape }}{% endif %}
 {% endcapture %}
+{% assign canonical_url = page.url | replace:'index.html','' | replace:'.html','' | absolute_url %}
 <head>
 
   <meta charset="utf-8">
@@ -10,6 +11,7 @@
   <title>{{ page_title }}</title>
 
   <meta name="description" content="{{ page.excerpt | default: site.description | strip_html | normalize_whitespace | truncate: 160 | escape }}">
+  <meta name="twitter:url" content="{{ canonical_url }}">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:site" content="@{{ site.social.twitter }}">
   <meta name="twitter:creator" content="@_cmbuckley">
@@ -21,6 +23,7 @@
   <meta property="og:image" content="{{ page.image | default: "/img/logo.jpg" | absolute_url }}">
   <meta property="og:title" content="{{ site.author }}">
   <meta property="og:description" content="{{ site.description }}">
+  <meta property="og:url"  content="{{ canonical_url }}">
 
   <link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
@@ -30,6 +33,6 @@
   <link rel="stylesheet" href="{{"/assets/vendor/fontawesome-free/css/all.min.css" | relative_url }}">
 
   <link rel="stylesheet" href="{{"/assets/main.css" | relative_url }}">
-  <link rel="canonical" href="{{ page.url | replace:'index.html','' | replace:'.html','' | absolute_url }}">
+  <link rel="canonical" href="{{ canonical_url }}">
 
 </head>
