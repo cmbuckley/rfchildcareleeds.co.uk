@@ -20,5 +20,7 @@ plugins:
 sass:
   style: compressed
 
-facebook_username: sweetpeasleeds
-instagram_username: sweetpeasleeds
+social:
+  facebook: sweetpeasleeds
+  instagram: sweetpeasleeds
+  twitter: leedssweetpeas
