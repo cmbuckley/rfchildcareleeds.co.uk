@@ -4,7 +4,7 @@ title: About Us
 background: about.jpg
 ---
 
-![Jessica and Becki!](/img/about-profile.jpg){: class="img-thumbnail float-left mr-2" }
+![Jessica and Becki!](/img/about-profile.jpg){: class="img-profile img-thumbnail float-left mr-2" }
 
 Hello and welcome! My name is Rebecca Firth (Becki). I live with my husband Adam who is a Secondary School Geography teacher.
 
