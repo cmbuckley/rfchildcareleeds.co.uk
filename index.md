@@ -2,7 +2,7 @@
 layout: page
 background:
     image: logo.jpg
-    position: center 35%;
+    position: 0 35%;
 ---
 
 Hello and welcome to Sweet Peas Childcare!
