@@ -20,6 +20,10 @@ header.masthead {
 
 footer {
     padding-bottom: 20px;
+
+    .list-inline-item a:hover {
+        color: #a982d1;
+    }
 }
 
 @media (max-width: 576px) {
