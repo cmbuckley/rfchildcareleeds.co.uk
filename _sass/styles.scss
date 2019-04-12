@@ -43,3 +43,22 @@ footer {
 		border: 0;
 	}
 }
+
+.home-fb {
+    display: block;
+    margin: 0 auto;
+    border: none;
+    overflow: hidden;
+}
+
+@media (min-width: 1200px) {
+    .home-text {
+        float: left;
+        width: 50%;
+    }
+
+    .home-fb {
+        margin: 10px 0 0 10px;
+        float: right;
+    }
+}
