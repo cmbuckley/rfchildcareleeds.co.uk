@@ -21,6 +21,7 @@ plugins:
 sass:
   style: compressed
 
+facebook_app_id: 341096436539165
 social:
   facebook: sweetpeasleeds
   instagram: sweetpeasleeds
