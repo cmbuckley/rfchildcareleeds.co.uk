@@ -1,10 +1,10 @@
-author: Sweet Peas Childcare
-title: Sweet Peas Childcare - OFSTED Registered Child Minders in Leeds
-description: Sweet Peas Childcare is an OFSTED registered childminders in the LS27 area, with childcare experience since 2005.
+name: RF Childcare
+title: RF Childcare - OFSTED Registered Child Minders in Leeds
+description: RF Childcare is an OFSTED registered childminders in the LS27 area, with childcare experience since 2005.
 host: 0.0.0.0
 
-repository: cmbuckley/sweetpeasleeds.co.uk
-url: https://sweetpeasleeds.co.uk
+repository: cmbuckley/rfchildcareleeds.co.uk
+url: https://rfchildcareleeds.co.uk
 baseurl: ""
 
 markdown: kramdown
