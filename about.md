@@ -8,7 +8,7 @@ background: about.jpg
 
 Hello and welcome! My name is Rebecca Firth (Becki). I live with my husband Adam who is a Secondary School Geography teacher.
 
-I have a little girl whose name is Jessica who turned 1 year old in March 2019. We live in Morley & are in fantastic proximity to local parks, walks, playgroups and indoor play centres.
+I have a little girl whose name is Jessica (born in 2018). We live in Morley & are in fantastic proximity to local parks, walks, playgroups and indoor play centres.
 
 From leaving school, I studied a NVQ level 3 in nursery nursing to give me a great qualification in child care. From there I worked as a nanny, before now running my own business working as a childminder, in a safe home based setting, with all the comforts of home, but with a focus on child learning and development.
 
