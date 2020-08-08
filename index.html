@@ -11,11 +11,16 @@ background:
 
 <p>{{ site.name }} covers the LS27 areas of Leeds. Please contact us for more information about hours, prices and the service provided.</p>
 
-<div id="pixlee_container"></div>
-<script>
-window.PixleeAsyncInit = function() {
-    Pixlee.init({apiKey:'3QiO0wsEgTnLwlKdmND1'});
-    Pixlee.addSimpleWidget({widgetId:'25465'});
-};
+<div id="instafeed"></div>
+
+<script src="https://ig.instant-tokens.com/users/6f55d7fa-2046-46db-8bab-ae8b76361ad7/instagram/17841411398362468/token.js?userSecret=ukqvxeitxnm5mueehq42"></script>
+<script type="text/javascript" src="assets/vendor/instafeed/instafeed.min.js"></script>
+{% raw %}
+<script type="text/javascript">
+    var feed = new Instafeed({
+        accessToken: InstagramToken,
+        template: '<figure><a href="{{link}}"><img src="{{image}}" /></a><figcaption>{{caption}}</figcaption></figure>',
+    });
+    feed.run();
 </script>
-<script src="//instafeed.assets.pxlecdn.com/assets/pixlee_widget_1_0_0.js"></script>
+{% endraw %}

@@ -62,3 +62,18 @@ footer {
         float: right;
     }
 }
+
+#instafeed {
+    figure {
+        margin-bottom: 3rem;
+    }
+
+    img {
+        max-width: 100%;
+    }
+
+    figcaption {
+        font-size: 80%;
+        white-space: pre-wrap;
+    }
+}
