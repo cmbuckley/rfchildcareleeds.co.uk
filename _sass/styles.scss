@@ -31,17 +31,17 @@ footer {
         max-width: 120px;
     }
 
-	.sr-only-xs {
+    .sr-only-xs {
         // @include sr-only;
-		position: absolute;
-		width: 1px;
-		height: 1px;
-		padding: 0;
-		overflow: hidden;
-		clip: rect(0, 0, 0, 0);
-		white-space: nowrap;
-		border: 0;
-	}
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        padding: 0;
+        overflow: hidden;
+        clip: rect(0, 0, 0, 0);
+        white-space: nowrap;
+        border: 0;
+    }
 }
 
 .home-fb {
@@ -63,7 +63,30 @@ footer {
     }
 }
 
+@keyframes spinner {
+    to {transform: rotate(360deg);}
+}
+
 #instafeed {
+    &:empty {
+        margin-bottom: 1em;
+    }
+
+    &:empty:before {
+        content: '';
+        box-sizing: border-box;
+        position: absolute;
+        left: 50%;
+        width: 20px;
+        height: 20px;
+        margin-top: -10px;
+        margin-left: -10px;
+        border-radius: 50%;
+        border: 2px solid #ccc;
+        border-top-color: #000;
+        animation: spinner .6s linear infinite;
+    }
+
     figure {
         margin-bottom: 3rem;
     }
@@ -74,6 +97,7 @@ footer {
 
     figcaption {
         font-size: 80%;
-        white-space: pre-wrap;
+        white-space: pre-line;
+        overflow-wrap: anywhere;
     }
 }
