@@ -15,12 +15,15 @@ background:
 
 <script src="https://ig.instant-tokens.com/users/6f55d7fa-2046-46db-8bab-ae8b76361ad7/instagram/17841411398362468/token.js?userSecret=ukqvxeitxnm5mueehq42"></script>
 <script type="text/javascript" src="assets/vendor/instafeed/instafeed.min.js"></script>
-{% raw %}
 <script type="text/javascript">
-    var feed = new Instafeed({
-        accessToken: InstagramToken,
-        template: '<figure><a href="{{link}}"><img src="{{image}}" /></a><figcaption>{{caption}}</figcaption></figure>',
-    });
-    feed.run();
+    if (window.Instafeed) {
+        {% raw %}
+        new Instafeed({
+            accessToken: InstagramToken,
+            template: '<figure><a href="{{link}}"><img src="{{image}}" /></a><figcaption>{{caption}}</figcaption></figure>',
+        }).run();
+        {% endraw %}
+    } else {
+        document.getElementById('instafeed').innerHTML = '<p>Please visit the <a href="https://instagram.com/{{ site.social.instagram }}">{{ site.social.instagram}} Instagram page</a>.</p>';
+    }
 </script>
-{% endraw %}
