@@ -21,6 +21,12 @@ sass:
   style: compressed
 
 facebook_app_id: 341096436539165
+
+instagram:
+  account: 6f55d7fa-2046-46db-8bab-ae8b76361ad7
+  user: 17841411398362468
+  secret: ctumnoan5o4in7bs1eyxb
+
 social:
   instagram: rebecca.firthchildminding
   linkedin: rebecca-firth-aaa196184
